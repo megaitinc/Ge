@@ -1,0 +1,157 @@
+# robots.txt for GE Construction Group
+# Last Updated: August 23, 2024
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.geconstructiongroup.com/sitemap.xml
+
+# Allow all user agents to access the main website
+User-agent: *
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.md$
+Disallow: /*.gitignore$
+Disallow: /*.env$
+Disallow: /*.htaccess$
+Disallow: /*.htpasswd$
+Disallow: /*.DS_Store$
+Disallow: /*.git/
+Disallow: /*.svn/
+Disallow: /*.idea/
+Disallow: /*.vscode/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /backup/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /wp-admin/
+Disallow: /wp-content/plugins/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /search
+Disallow: /search/
+Disallow: /*?s=
+Disallow: /*&s=
+Disallow: /*?*
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow media files
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.pdf$
+Allow: /*.doc$
+Allow: /*.docx$
+Allow: /*.xls$
+Allow: /*.xlsx$
+
+# Crawl-delay for aggressive crawlers
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: DotBot
+Crawl-delay: 5
+
+# Block specific bots
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# Development and staging environments should be blocked
+User-agent: *
+Disallow: /staging/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /development/
+
+# Block query strings that don't affect content
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*page=
+Disallow: /*?*limit=
+Disallow: /*?*view=
+Disallow: /*?*print=
+Disallow: /*?*format=
+
+# Allow Google Image Search to index all images
+User-agent: Googlebot-Image
+Allow: /*
+
+# Block specific file types from search results
+User-agent: Googlebot
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.zip$
+Disallow: /*.gz$
+Disallow: /*.wmv$
+Disallow: /*.wma$
+Disallow: /*.swf$
+Disallow: /*.mov$
+Disallow: /*.mp4$
+Disallow: /*.m4a$
+Disallow: /*.m4v$
+Disallow: /*.m4p$
+Disallow: /*.mp3$
+Disallow: /*.mpg$
+Disallow: /*.mpeg$
+Disallow: /*.qt$
+Disallow: /*.ram$
+Disallow: /*.ra$
+Disallow: /*.rm$
+
+# Block specific paths from search results
+Disallow: /includes/
+Disallow: /templates/
+Disallow: /cache/
+Disallow: /component/
+Disallow: /component/
+Disallow: /administrator/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /libraries/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /templates/
+Disallow: /tmp/
+
+# Allow search engines to crawl AJAX fragments
+Allow: /*?*_escaped_fragment_=
+
+# Block search pages from search results
+Disallow: /search/
+Disallow: /*?*q=
+Disallow: /*?*s=
+Disallow: /*?*search=
+
+# Block print pages from search results
+Disallow: /*?*print=1
+Disallow: /*?*print=pdf
+Disallow: /*?*print=1&*

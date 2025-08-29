@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GE Construction Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        .contact-info {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        .contact-info h3:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #007bff;
+            bottom: 0;
+            left: 0;
+        }
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        .contact-details p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .contact-details i {
+            color: #007bff;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            min-width: 25px;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #f1f1f1;
+            border-radius: 50%;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background: #007bff;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        .contact-form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .form-control {
+            height: 50px;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            padding: 0.75rem 1rem;
+        }
+        textarea.form-control {
+            height: 150px;
+            resize: none;
+        }
+        .btn-submit {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn-submit:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #contactFormSection {
+            scroll-margin-top: 80px;
+        }
+        @media (max-width: 991.98px) {
+            .contact-section {
+                padding: 60px 0;
+            }
+            .contact-form, .contact-info {
+                margin-bottom: 2rem;
+            }
+        }
+        @media (max-width: 767.98px) {
+            .contact-section {
+                padding: 40px 0;
+            }
+            .navbar-brand img {
+                max-height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="GE Construction Group" class="img-fluid" style="max-height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+                        <a class="btn btn-primary w-100" href="contact.html#contactFormSection">GET A QUOTE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white py-5 mt-5">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                    <p class="lead mb-0">Get in touch with our team for any inquiries or to schedule a consultation</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contactFormSection">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Send us a Message</h3>
+                        <form id="contactForm" action="contact.php" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" name="submit" class="btn btn-submit w-100 w-md-auto">
+                                        <span class="submit-text">Send Message</span>
+                                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="formMessage" class="alert alert-dismissible fade show d-none mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Our Location</h5>
+                                <p class="mb-0">Gaithersburg, MD 20878-1964</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone Number</h5>
+                                <p class="mb-0">(301) 529-9533</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Address</h5>
+                                <p class="mb-0">greenelephantgroup@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Working Hours</h5>
+                                <p class="mb-0">Mon - Fri: 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <!-- Social Media Icons -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-auto">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white fs-4" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Icons -->
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-md-4 mb-3">
+                    <a href="tel:3015299533" class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+                        <i class="fas fa-phone-alt me-2"></i> (301) 529-9533
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="mailto:greenelephantgroup@gmail.com" class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+                        <i class="fas fa-envelope me-2"></i> greenelephantgroup@gmail.com
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="fas fa-map-marker-alt me-2"></i> Gaithersburg, MD 20878
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 GE Construction Group. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        Designed by 
+                        <a href="https://megaitinc.com/" target="_blank" class="text-white text-decoration-none">
+                            <img src="image/megaitpowered.png" alt="Megait Inc." style="height: 16px; margin-left: 5px; vertical-align: middle;">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const submitText = form.querySelector('.submit-text');
+            const spinner = form.querySelector('.spinner-border');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                submitText.classList.add('d-none');
+                spinner.classList.remove('d-none');
+                
+                // Get form data
+                const formData = new FormData(form);
+                
+                // Send form data using Fetch API
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showAlert('success', data.message || 'Your message has been sent successfully!');
+                        form.reset();
+                    } else {
+                        // Handle validation errors
+                        let errorMessage = data.message || 'There was a problem with your submission.';
+                        if (data.errors) {
+                            errorMessage = Object.values(data.errors).join('<br>');
+                        }
+                        showAlert('danger', errorMessage);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showAlert('danger', 'There was a problem sending your message. Please try again later.');
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitBtn.disabled = false;
+                    submitText.classList.remove('d-none');
+                    spinner.classList.add('d-none');
+                });
+            });
+
+            function showAlert(type, message) {
+                // Remove any existing alerts
+                const existingAlert = formMessage;
+                if (existingAlert) {
+                    form.removeChild(existingAlert);
+                }
+                
+                // Create new alert
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+                alertDiv.role = 'alert';
+                alertDiv.innerHTML = `
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                `;
+                
+                // Insert alert before the form
+                form.insertBefore(alertDiv, form.firstChild);
+                
+                // Auto-dismiss after 5 seconds
+                setTimeout(() => {
+                    const bsAlert = new bootstrap.Alert(alertDiv);
+                    bsAlert.close();
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>

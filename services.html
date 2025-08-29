@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Construction & Remodeling Services in Gaithersburg | GE Construction Group</title>
+    <meta name="description" content="Professional construction and remodeling services in Gaithersburg. Kitchen & bathroom renovations, basement finishing, deck building, and complete home makeovers. Free estimates!" />
+    <meta name="keywords" content="Gaithersburg construction, home remodeling, kitchen renovation, bathroom remodel, basement finishing, deck building, home addition, home improvement, general contractor, Montgomery County" />
+    <meta name="author" content="GE Construction Group">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.geconstructiongroup.com/services" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geconstructiongroup.com/services">
+    <meta property="og:title" content="Professional Construction & Remodeling Services in Gaithersburg">
+    <meta property="og:description" content="Transform your home with our expert construction and remodeling services in Gaithersburg. Kitchen, bathroom, basement, and deck specialists.">
+    <meta property="og:image" content="https://www.geconstructiongroup.com/image/ge-construction-services.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Professional Construction & Remodeling Services in Gaithersburg">
+    <meta name="twitter:description" content="Expert home remodeling and construction services in Gaithersburg. Kitchen, bathroom, basement, and deck specialists.">
+    <meta name="twitter:image" content="https://www.geconstructiongroup.com/image/ge-construction-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Construction & Remodeling Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "GE Construction Group",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gaithersburg",
+          "addressRegion": "MD",
+          "postalCode": "20877",
+          "addressCountry": "US"
+        },
+        "telephone": "+12405231234",
+        "openingHours": "Mo-Fr 08:00-18:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Construction Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Kitchen Remodeling",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Kitchen Renovation",
+                  "description": "Complete kitchen remodeling including cabinets, countertops, and flooring"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Bathroom Remodeling",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Bathroom Renovation",
+                  "description": "Full bathroom remodeling including tiling, fixtures, and plumbing"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Basement Finishing",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Basement Remodeling",
+                  "description": "Transform your basement into a functional living space"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .services-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/2.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+        .services-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+        .services-hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .services-hero .btn {
+            font-size: 1.1rem;
+            padding: 0.75rem 2rem;
+            font-weight: 500;
+            margin: 0.5rem;
+            border-width: 2px;
+        }
+        @media (max-width: 768px) {
+            .services-hero {
+                padding: 120px 20px 80px;
+            }
+            .services-hero h1 {
+                font-size: 2.5rem;
+            }
+            .services-hero p {
+                font-size: 1.2rem;
+            }
+        }
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .service-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .service-icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: #007bff;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .service-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .service-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        .service-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Preload critical images */
+        body::after {
+            position: absolute; 
+            width: 0; 
+            height: 0; 
+            overflow: hidden; 
+            z-index: -1;
+            content: url('image/3.jpg') url('image/4.jpg') url('image/5.jpg') url('image/6.jpg') url('image/7.jpg') url('image/8.jpg') url('image/9.jpg') url('image/10.jpg');
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Service card hover effect */
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+        }
+
+        /* Service icon animation */
+        .service-icon {
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Loading animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .service-row {
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        .service-row:nth-child(1) { animation-delay: 0.1s; }
+        .service-row:nth-child(2) { animation-delay: 0.3s; }
+        .service-row:nth-child(3) { animation-delay: 0.5s; }
+        .service-row:nth-child(4) { animation-delay: 0.7s; }
+        .service-row:nth-child(5) { animation-delay: 0.9s; }
+        .service-row:nth-child(6) { animation-delay: 1.1s; }
+
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .services-hero {
+                padding: 100px 0 60px;
+            }
+            
+            .service-img {
+                height: 200px;
+                margin-bottom: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .services-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .service-icon {
+                font-size: 2rem;
+            }
+            
+            .service-list li {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="GE Construction Group">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html#contactFormSection">CONTACT</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a href="contact.html#contactFormSection" class="btn btn-primary">GET A QUOTE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Schema.org markup -->
+    <header class="services-hero" role="banner" itemscope itemtype="https://schema.org/Service">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold mb-3" itemprop="name">Professional Construction & Remodeling Services</h1>
+                    <p class="lead mb-4" itemprop="description">Transforming homes in Gaithersburg and surrounding areas with expert craftsmanship and attention to detail.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg px-4 me-2">Get Free Estimate</a>
+                    <a href="tel:+12405231234" class="btn btn-outline-light btn-lg px-4">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Services Introduction -->
+        <section class="py-5" aria-labelledby="services-intro">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title" id="services-intro">Our Comprehensive Construction Services</h2>
+                    <p class="lead">At <span itemprop="name">GE Construction Group LLC</span>, we specialize in a wide range of construction and remodeling services. Our team of experts is dedicated to bringing your vision to life, transforming your home with high-quality craftsmanship and a personalized touch.</p>
+                </div>
+
+                <!-- Kitchen Remodeling -->
+                <article class="row align-items-center mb-5 service-row" itemscope itemtype="https://schema.org/Service">
+                    <div class="col-lg-6">
+                        <img src="image/1.jpg" alt="Modern Kitchen Remodeling in Gaithersburg" class="img-fluid rounded" itemprop="image" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ps-lg-4">
+                            <div class="service-icon">
+                                <i class="fas fa-utensils" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="h3 mb-3" itemprop="name">Kitchen Remodeling</h2>
+                            <p class="mb-4" itemprop="description">Transform your kitchen into a beautiful and functional space with our expert remodeling services. We handle everything from cabinet installation to custom countertops and modern appliances.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Custom cabinet design and installation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Countertop replacement (granite, quartz, marble)</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Backsplash installation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Lighting and electrical upgrades</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Complete kitchen makeovers</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary">Get Kitchen Remodeling Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Bathroom Remodeling -->
+                <article class="row align-items-center mb-5 flex-lg-row-reverse service-row" itemscope itemtype="https://schema.org/Service">
+                    <div class="col-lg-6">
+                        <img src="image/3.jpg" alt="Luxury Bathroom Remodeling in Gaithersburg" class="img-fluid rounded" itemprop="image" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+                            <div class="service-icon">
+                                <i class="fas fa-bath" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="h3 mb-3" itemprop="name">Bathroom Remodeling</h2>
+                            <p class="mb-4" itemprop="description">Create your dream bathroom with our professional remodeling services. We specialize in both modern and traditional designs to match your style and needs.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Walk-in showers and tubs</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Vanity and sink installation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Tile and flooring</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Plumbing and lighting fixtures</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Complete bathroom renovations</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary">Get Bathroom Remodeling Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Additional Services Grid -->
+                <section class="py-5" aria-labelledby="additional-services">
+                    <h2 class="text-center mb-5" id="additional-services">Additional Services</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4" itemscope itemtype="https://schema.org/Service">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="image/4.jpg" class="card-img-top" alt="Basement Finishing" loading="lazy">
+                                <div class="card-body text-center p-4">
+                                    <div class="service-icon mb-3">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3" itemprop="name">Basement Finishing</h3>
+                                    <p class="mb-4" itemprop="description">Transform your unfinished basement into valuable living space with our professional finishing services.</p>
+                                    <a href="contact.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" itemscope itemtype="https://schema.org/Service">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="image/5.jpg" class="card-img-top" alt="Deck & Patio" loading="lazy">
+                                <div class="card-body text-center p-4">
+                                    <div class="service-icon mb-3">
+                                        <i class="fas fa-tools" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3" itemprop="name">Deck & Patio</h3>
+                                    <p class="mb-4" itemprop="description">Enhance your outdoor living with our custom deck and patio construction services.</p>
+                                    <a href="contact.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" itemscope itemtype="https://schema.org/Service">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="image/6.jpg" class="card-img-top" alt="Painting Services" loading="lazy">
+                                <div class="card-body text-center p-4">
+                                    <div class="service-icon mb-3">
+                                        <i class="fas fa-paint-roller" aria-hidden="true"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3" itemprop="name">Painting Services</h3>
+                                    <p class="mb-4" itemprop="description">Professional interior and exterior painting services to refresh your home's appearance.</p>
+                                    <a href="contact.html" class="btn btn-sm btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Service Area -->
+                <section class="bg-light py-5" aria-labelledby="service-area">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title" id="service-area">Serving Gaithersburg & Surrounding Areas</h2>
+                            <p class="lead">We proudly serve homeowners throughout Montgomery County, MD</p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="p-4 bg-white rounded shadow-sm h-100">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h3 class="h5 mb-3">Gaithersburg</h3>
+                                    <p class="mb-0">Full-service construction and remodeling for Gaithersburg homes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="p-4 bg-white rounded shadow-sm h-100">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h3 class="h5 mb-3">Rockville</h3>
+                                    <p class="mb-0">Professional home renovations in the Rockville area.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="p-4 bg-white rounded shadow-sm h-100">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h3 class="h5 mb-3">Germantown</h3>
+                                    <p class="mb-0">Quality construction services for Germantown residents.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="p-4 bg-white rounded shadow-sm h-100">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h3 class="h5 mb-3">North Potomac</h3>
+                                    <p class="mb-0">Expert home improvements in North Potomac.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="bg-primary text-white py-5" aria-labelledby="cta-section">
+                    <div class="container text-center py-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="h1 mb-4" id="cta-section">Ready to Start Your Project?</h2>
+                                <p class="lead mb-4">Contact us today for a free consultation and estimate. Our team is ready to bring your vision to life with quality craftsmanship and exceptional service.</p>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="tel:+12405231234" class="btn btn-light btn-lg px-4">
+                                        <i class="fas fa-phone-alt me-2" aria-hidden="true"></i> Call Now
+                                    </a>
+                                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+                                        <i class="fas fa-envelope me-2" aria-hidden="true"></i> Get Free Estimate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="bg-dark text-white pt-5 pb-3" role="contentinfo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <h3 class="h4 mb-0">GE Construction Group</h3>
+                            </div>
+                            <p class="mb-4">Professional construction services with excellence and integrity. We build your dreams into reality with quality craftsmanship and attention to detail.</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/geconstructiongroup/" target="_blank" class="text-white me-3" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                </a>
+                                <a href="https://www.houzz.com/professionals/kitchen-and-bath-remodelers/ge-construction-group-llc-pfvwus-pf~1010110173" target="_blank" class="text-white me-3" aria-label="Houzz">
+                                    <i class="fab fa-houzz fa-lg"></i>
+                                </a>
+                                <a href="https://thebuildermarket.com/pros/ge-construction-group-llc-f6974801" target="_blank" class="text-white me-3" aria-label="The Builder Market">
+                                    <i class="fas fa-home fa-lg"></i>
+                                </a>
+                                <a href="https://www.google.com/search?q=GE+Construction+Group" target="_blank" class="text-white" aria-label="Google">
+                                    <i class="fab fa-google fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <h4 class="h5 mb-4">Contact Us</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="fas fa-phone-alt mt-1 me-2"></i>
+                                            <div>
+                                                <a href="tel:3015299533" class="text-white text-decoration-none d-block">301-529-9533</a>
+                                                <small class="text-muted">Mon-Fri: 8:00 AM - 5:00 PM</small>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="fas fa-envelope mt-1 me-2"></i>
+                                            <div>
+                                                <a href="mailto:greenelephantgroup@gmail.com" class="text-white text-decoration-none">greenelephantgroup@gmail.com</a>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="fas fa-map-marker-alt mt-1 me-2"></i>
+                                            <div>
+                                                <p class="text-white text-decoration-none d-block">Gaithersburg, MD 20878-1964</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="h5 mb-4">Service Areas</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">Montgomery County</li>
+                                        <li class="mb-2">Prince George's County</li>
+                                        <li class="mb-2">Howard County</li>
+                                        <li>Washington D.C.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4 border-secondary">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <p class="mb-0 small">&copy; 2025 GE Construction Group. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p class="mb-0 small">
+                                Designed by 
+                                <a href="https://megaitinc.com/" target="_blank" class="text-decoration-none">
+                                    <img src="image/megaitpowered.png" alt="Megait Inc." style="height: 16px; margin-left: 5px; vertical-align: middle;">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Bootstrap JS Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Custom JS -->
+            <script src="js/script.js"></script>
+
+            <!-- Back to top button -->
+            <a href="#" class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+            <script>
+                // Back to top button
+                const backToTopButton = document.getElementById('backToTop');
+                
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Add service-row class to all service sections
+                document.addEventListener('DOMContentLoaded', function() {
+                    const serviceSections = document.querySelectorAll('.row.align-items-center');
+                    serviceSections.forEach((section, index) => {
+                        section.classList.add('service-row');
+                        section.style.animationDelay = `${index * 0.2}s`;
+                    });
+                });
+            </script>
+</body>
+</html>
